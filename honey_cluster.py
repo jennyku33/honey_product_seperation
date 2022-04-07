@@ -17,7 +17,6 @@ def honey_cluster(df):
     product_view = df[df['landing_page'] == "product"]
     payments = df[df['landing_page'] == "payment"]
     payments_process = payments[payments['location'].str.contains('process')]
-    
     #url 발라내기 
     payments_process['offering_type'] = 0
     
